@@ -1,20 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/nav';
-import Home from './pages/Home';
-import Kategory from './pages/Kategory';
-import Produk from './pages/Product';
+import Routing from './components/Routing';
 
 function App() {
   return (
    <BrowserRouter>
    <Navbar />
-   <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/Kategory" element={<Kategory />} />
-      <Route path="/Produk" element={<Produk />} />
-   </Routes>
+   <Routing />
    </BrowserRouter>
   );
 }
